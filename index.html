@@ -2147,6 +2147,26 @@
         }
     }
 
+    .forward-button {
+        height: 60%;
+        width:7%;
+        background-color: transparent;
+        border-style: none;
+        text-align: right;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .back-button {
+        height: 60%;
+        width:7%;
+        background-color: transparent;
+        border-style: none;
+        text-align: left;
+        outline: none;
+        box-shadow: none;
+    }
+
 </style>
 
 <body>
@@ -2180,8 +2200,8 @@
 
         <div class="w3-hide" id="mySlidesContainer"></div>
 
-        <button id="left-arrow" class="w3-button w3-green w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button id="right-arrow" class="w3-button w3-green w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        <button id="left-arrow" class="w3-hide w3-display-left back-button" onclick="plusDivs(-1)">&#10094;</button>
+        <button id="right-arrow" class="w3-hide w3-display-right forward-button" onclick="plusDivs(1)">&#10095;</button>
     </div>
 
     <script>
@@ -2223,21 +2243,21 @@
             var i;
             var x = document.getElementsByClassName("mySlides");
             if (n == 1) {
-                document.getElementById("left-arrow").className = "w3-button w3-display-left w3-disabled";
+                document.getElementById("left-arrow").className = "w3-display-left w3-disabled";
                 document.getElementById("left-arrow").setAttribute("onclick", "");
-                document.getElementById("right-arrow").className = "w3-button w3-green w3-display-right";
+                document.getElementById("right-arrow").className = "w3-display-right forward-button";
                 document.getElementById("right-arrow").setAttribute("onclick", "plusDivs(1)");
             }
             if (n == x.length) {
-                document.getElementById("left-arrow").className = "w3-button w3-green w3-display-left";
+                document.getElementById("left-arrow").className = "w3-display-left back-button";
                 document.getElementById("left-arrow").setAttribute("onclick", "plusDivs(-1)");
-                document.getElementById("right-arrow").className = "w3-button w3-display-right w3-disabled";
+                document.getElementById("right-arrow").className = "w3-display-right w3-disabled";
                 document.getElementById("right-arrow").setAttribute("onclick", "");
             }
             if (n > 1 && n < x.length) {
-                document.getElementById("left-arrow").className = "w3-button w3-green w3-display-left";
+                document.getElementById("left-arrow").className = "w3-display-left back-button";
                 document.getElementById("left-arrow").setAttribute("onclick", "plusDivs(-1)");
-                document.getElementById("right-arrow").className = "w3-button w3-green w3-display-right";
+                document.getElementById("right-arrow").className = "w3-display-right forward-button";
                 document.getElementById("right-arrow").setAttribute("onclick", "plusDivs(1)");
             }
             if (n > x.length) {
