@@ -2204,13 +2204,13 @@
     </div>
 
     <script>
-        slideIndex = 1;
+        var slideIndex = 1;
         document.addEventListener("keydown", keyDownTextField, false);
 
         var wordsCollection = [
-            { "wordIs": "I", "level": 1, "usage": "I can see", "soundFile": "" },
-            { "wordIs": "a", "level": 1, "usage": "a red dog", "soundFile": "" },
-            { "wordIs": "the", "level": 1, "usage": "the cat", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/the--_us_9.mp3" },
+            { "wordIs": "I", "level": 1, "usage": "I can see", "soundFile": "https://www.macmillandictionary.com/media/american/us_pron/i/i_A/i_Ame/i_American_English_pronunciation.mp3" },
+            { "wordIs": "a", "level": 1, "usage": "a red dog", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/a--_us_1.mp3" },
+            { "wordIs": "the", "level": 1, "usage": "the cat", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/the--_us_1.mp3" },
             { "wordIs": "yes", "level": 1, "usage": "Yes, I can!", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/yes--_us_2.mp3" },
             { "wordIs": "he", "level": 1, "usage": "He is", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/he--_us_1.mp3" },
             { "wordIs": "is", "level": 1, "usage": "Is the dog red?", "https://ssl.gstatic.com/dictionary/static/sounds/20200429/soundFile": "" },
@@ -2231,11 +2231,11 @@
             { "wordIs": "and", "level": 1, "usage": "yes and no", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/and--_us_4.mp3" },
             { "wordIs": "on", "level": 1, "usage": "on the can", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/on_--1_us_1.mp3" },
             { "wordIs": "up", "level": 1, "usage": "up you go!", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/up_--1_us_1.mp3" },
-            { "wordIs": "cat", "level": 1, "usage": "dog and cat", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/cat--_us_1.mp3" },
+            { "wordIs": "cat", "level": 1, "usage": "dog and cat", "soundFile": "https://www.macmillandictionary.com/media/american/us_pron/c/cat/cat_A/cat_American_English_pronunciation.mp3" },
             { "wordIs": "you", "level": 1, "usage": "you and me", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/you--_us_2_rr.mp3" },
 
             { "wordIs": "an", "level": 2, "usage": "an ant", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/an_--1_us_1.mp3" },
-            { "wordIs": "be", "level": 2, "usage": "be you", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/be--_us_1.mp3" },
+            { "wordIs": "be", "level": 2, "usage": "be you", "soundFile": "https://www.macmillandictionary.com/media/american/us_pron/b/be_/be_Am/be_American_English_pronunciation.mp3" },
             { "wordIs": "for", "level": 2, "usage": "Go for me.", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/for--_us_2.mp3" },
             { "wordIs": "do", "level": 2, "usage": "Do it for him.", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/do--_us_2.mp3" },
             { "wordIs": "her", "level": 2, "usage": "her dog", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/her--_us_3_rr.mp3" },
@@ -2246,7 +2246,7 @@
             { "wordIs": "stop", "level": 2, "usage": "stop touching me", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/stop--_us_1.mp3" },
             { "wordIs": "him", "level": 2, "usage": "I see him.", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/him--_us_1.mp3" },
             { "wordIs": "it", "level": 2, "usage": "Is it a dog or cat?", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/it--_us_2.mp3" },
-            { "wordIs": "I'm", "level": 2, "usage": "I'm done.", "soundFile": "" },
+            { "wordIs": "I'm", "level": 2, "usage": "I'm done.", "soundFile": "https://www.macmillandictionary.com/media/american/us_pron/I/I_m/I_m_A/I_m_American_English_pronunciation.mp3" },
             { "wordIs": "we", "level": 2, "usage": "Can we go in?", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/we--_us_1.mp3" },
             { "wordIs": "had", "level": 2, "usage": "Mom had to play.", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/have--_us_3.mp3" },
             { "wordIs": "are", "level": 2, "usage": "are you going to?", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/are--_us_6.mp3" },
@@ -2308,7 +2308,7 @@
             { "wordIs": "run", "level": 4, "usage": "The dog can run." },
             { "wordIs": "over", "level": 4, "usage": "Look over here!" },
             { "wordIs": "away", "level": 4, "usage": "run away" },
-            { "wordIs": "don't", "level": 4, "usage": "Don't look!" },
+            { "wordIs": "don't", "level": 4, "usage": "Don't look!", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/don_t--1_us_1.mp3" },
             { "wordIs": "ten", "level": 4, "usage": "ten cats" },
             { "wordIs": "who", "level": 4, "usage": "Who is it?" },
 
@@ -2421,11 +2421,11 @@
             { "wordIs": "woman", "level": 9, "usage": "That woman is my mom." },
             { "wordIs": "between", "level": 9, "usage": "between you and me" },
             { "wordIs": "already", "level": 9, "usage": "Is it time to eat already?" },
-            { "wordIs": "couldn't", "level": 9, "usage": "Couldn't we go to?" },
+            { "wordIs": "couldn't", "level": 9, "usage": "Couldn't we go to?", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/couldn_t--1_us_2.mp3" },
             { "wordIs": "large", "level": 9, "usage": "a large dog" },
             { "wordIs": "friend", "level": 9, "usage": "my best friend" },
             { "wordIs": "everyone", "level": 9, "usage": "Everyone can play." },
-            { "wordIs": "second", "level": 9, "usage": "just a second" },
+            { "wordIs": "second", "level": 9, "usage": "just a second", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/second--_us_1.mp3" },
             { "wordIs": "might", "level": 9, "usage": "We might see it." },
             { "wordIs": "started", "level": 9, "usage": "Get started now!" },
             { "wordIs": "together", "level": 9, "usage": "all together again" },
@@ -2454,10 +2454,10 @@
             { "wordIs": "thought", "level": 10, "usage": "She thought about it." },
             { "wordIs": "while", "level": 10, "usage": "while the girl was playing" },
             { "wordIs": "beautiful", "level": 10, "usage": "a beautiful day" },
-            { "wordIs": "either", "level": 10, "usage": "It was either mom or data" },
+            { "wordIs": "either", "level": 10, "usage": "It was either mom or data", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/either--_us_1_rr.mp3" },
             { "wordIs": "finally", "level": 10, "usage": "We are finally here!" },
-            { "wordIs": "wouldn't", "level": 10, "usage": "The dog wouldn't eat it" },
-            { "wordIs": "used", "level": 10, "usage": "I used the pencil" },
+            { "wordIs": "wouldn't", "level": 10, "usage": "The dog wouldn't eat it", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/wouldn_t--1_us_2.mp3" },
+            { "wordIs": "used", "level": 10, "usage": "I used the pencil", "soundFile": "https://ssl.gstatic.com/dictionary/static/sounds/20200429/used--_us_1.mp3" },
             { "wordIs": "write", "level": 10, "usage": "write about it" },
             { "wordIs": "sure", "level": 10, "usage": "I am sure you can do it!" },
             { "wordIs": "work", "level": 10, "usage": "do your work" },
@@ -2628,7 +2628,7 @@
                     if (element.soundFile) {
                         mySlidesHTML += "<div class=\"mySlides outline\"><div class=\"w3-cell-auto\"><div class=\"text-center\"><span id=\"" + element.wordIs + "\" class=\"word\" onclick=\"play(this.id)\" sound-file=\"" + element.soundFile + "\">" + element.wordIs + "</span><br><span class=\"usage\">" + element.usage + "</span></div><div class=\"level\">List <span>" + element.level + "</span></div></div></div>";
                     } else {
-                        mySlidesHTML += "<div class=\"mySlides outline\"><div class=\"w3-cell-auto\"><div class=\"text-center\"><span class=\"word\">" + element.wordIs + "</span><br><span class=\"usage\">" + element.usage + "</span></div><div class=\"level\">List <span>" + element.level + "</span></div></div></div>";
+                        mySlidesHTML += "<div class=\"mySlides outline\"><div class=\"w3-cell-auto\"><div class=\"text-center\"><span id=\"" + element.wordIs + "\" class=\"word\" onclick=\"play(this.id)\">" + element.wordIs + "</span><br><span class=\"usage\">" + element.usage + "</span></div><div class=\"level\">List <span>" + element.level + "</span></div></div></div>";
                     }
                 });
                 mySlidesHTML += "<div class=\"mySlides outline\"><div class=\"w3-cell-auto\"><div class=\"text-center\"><span class=\"word\">THE END</span></div></div></div>";
@@ -2638,13 +2638,28 @@
             document.getElementById("mySlidesContainer").innerHTML = mySlidesHTML;
             slideIndex = 1;
             showDivs(1);
+            console.log('Ready');
         }
 
         function play(elementId) {
+            console.log('Playing: ' + elementId);
             wordsCollection.forEach(function (element) {
                 if (element.wordIs === elementId) {
-                    var audio = new Audio(element.soundFile);
-                    audio.play();
+                    if (element.soundFile){
+                        var audio = new Audio(element.soundFile);
+                        audio.play();
+                    } else {
+                        var audio = new Audio();
+                        var audioSuffixes = ['--_us_1_rr.mp3','--_us_2_rr.mp3','--_us_3_rr.mp3','--_us_1.mp3','--_us_2.mp3','--_us_3.mp3'];
+                        audioSuffixes.forEach(function(suffix) {
+                                console.log(elementId + suffix)
+                                audio = new Audio("https://ssl.gstatic.com/dictionary/static/sounds/20200429/" + elementId + suffix);
+                                // TODO: This plays the sounds, but would like to figure out how to trap 404 errors and log more cleanly.
+                                if (audio.play() == undefined) {
+                                    console.log('could not play file: ' + elementId + suffix)
+                                }
+                        });
+                    }
                 }
             });
         }
